@@ -83,7 +83,7 @@ export default function Sidebar() {
         </div>
 
         {/* Sidebar footer */}
-        <div className="w-full h-fit bg-black py-2 ">
+        <div className="w-full h-fit py-2 ">
           <ul className="sidebar-list">
             {SidebarFooterItems.map(({ name, href, icon }) => (
               <SidebarItem
