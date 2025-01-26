@@ -1,10 +1,9 @@
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import { useState } from "react";
 import { BsShieldCheck, BsShieldX } from "react-icons/bs";
 import { LuServer } from "react-icons/lu";
 import { NodeProps, Position } from "reactflow";
 import CustomHandle from "./CustomeHandle";
-import ReactTooltip from "react-tooltip";
-import { useState } from "react";
 import NodePopoverServerState from "./NodePopoverServerState";
 
 export default function ServerState({
@@ -42,7 +41,7 @@ export default function ServerState({
       onMouseLeave={handleMouseLeave}
       className="relative"
     >
-      <Card className="server-state-node">
+      <Card className="server-state-node2">
         <CardContent className="server-node-container">
           <CardContent className="server-node-flex">
             <span className="server-node-icon">

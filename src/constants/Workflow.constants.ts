@@ -26,7 +26,7 @@ export const initialNodes: Node[] = [
       ipAdress: "192.168.1.2",
       status: "critical",
     },
-    position: { x: 1200, y: -20 },
+    position: { x: 1100, y: -40 },
     type: "server-state",
   },
   {
@@ -36,7 +36,7 @@ export const initialNodes: Node[] = [
       ipAdress: "192.168.1.2",
       status: "low",
     },
-    position: { x: 1200, y: 190 },
+    position: { x: 1100, y: 210 },
     type: "server-state",
   },
 ];

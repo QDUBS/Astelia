@@ -16,6 +16,23 @@ body {
   background-color: #eee;
 }
 
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 /* Layout */
 .layout {
   background-color: white;
@@ -523,6 +540,16 @@ body {
   justify-content: center;
 }
 
+.server-state-node2 {
+  width: 250px;
+  height: 120px;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .server-node-labels {
   width: 100%;
 }
@@ -871,7 +898,7 @@ body {
 
 /* Info */
 .node-popover-info {
-  width: 60rem;
+  width: 55rem;
   height: 19rem;
   background-color: #fff;
   border-radius: 12px;
@@ -881,7 +908,7 @@ body {
 
 /* State */
 .node-popover-state {
-  width: 50rem;
+  width: 30rem;
   height: 19rem;
   background-color: #fff;
   border-radius: 12px;
@@ -1050,9 +1077,9 @@ body {
 
 .popover {
   position: absolute;
-  top: 6rem;
+  top: 13rem;
   left: 0;
-  z-index: 1;
+  z-index: 2000;
 }
 
 /* End Popovers Block */

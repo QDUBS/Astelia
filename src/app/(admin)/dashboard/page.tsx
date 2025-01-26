@@ -87,7 +87,7 @@ const Dashboard = () => {
   );
 
   return (
-    <div className="w-full h-screen bg-white flex justify-between gap-8 pr-6 py-6 max-[1050px]:flex-col  max-[1050px]:w-full">
+    <div className="container">
       {/* Description */}
       <div className="description">
         {/* Intro section */}
