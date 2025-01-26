@@ -27,7 +27,7 @@ import ReactFlow, {
 } from "reactflow";
 import "reactflow/dist/style.css";
 import DescriptionItem from "../../../components/dashboard/DescriptionItem";
-import "../../globals.css";
+import "../../../styles/globals.css";
 
 const nodeTypes = {
   "server-users": ServerUsers,
