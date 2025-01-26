@@ -9,12 +9,12 @@ import ServerInfo from "@/components/workflow/ServerInfo";
 import ServerState from "@/components/workflow/ServerState";
 import ServerUsers from "@/components/workflow/ServerUsers";
 import { DescriptionItems } from "@/constants/DescriptionItems.constants";
-import { RiskContainerServers } from "@/constants/RiskContainerServers.constants";
 import { RiskItems } from "@/constants/RiskItems.constants";
 import { ServerStatuses } from "@/constants/ServerStatuses.constants";
-import { Servers } from "@/constants/Servers.constants";
 import { initialEdges, initialNodes } from "@/constants/Workflow.constants";
+import { serverData as servers } from "@/db/serverData";
 import { auth } from "@/firebase/firebaseConfig";
+import { paginate } from "@/helpers/pagination";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -26,13 +26,8 @@ import ReactFlow, {
   useNodesState,
 } from "reactflow";
 import "reactflow/dist/style.css";
-import DescriptionItem from "../../../src/components/dashboard/DescriptionItem";
+import DescriptionItem from "../../../components/dashboard/DescriptionItem";
 import "../../globals.css";
-import NodePopoverUsers from "@/components/workflow/NodePopoverUsers";
-import NodePopoverServerState from "@/components/workflow/NodePopoverServerState";
-import NodePopoverServerInfo from "@/components/workflow/NodePopoverServerInfo";
-import { paginate } from "@/helpers/pagination";
-import { serverData as servers } from "@/db/serverData";
 
 const nodeTypes = {
   "server-users": ServerUsers,
