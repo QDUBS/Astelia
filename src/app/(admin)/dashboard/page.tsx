@@ -191,10 +191,6 @@ const Dashboard = () => {
         <div className="graph-container">
           <p className="graph-container-heading">Servers Risk Analytics</p>
 
-          {/* <NodePopoverServerInfo nodeData={""} />
-          <NodePopoverServerState nodeData={""} />
-          <NodePopoverUsers nodeData={""} /> */}
-
           <div className="risk-wrapper">
             {/* Risk container */}
             <div className="risk-container">
