@@ -158,7 +158,7 @@ const Dashboard = () => {
       <div className="graph">
         {/* Flowchart */}
         <div className="flowchart-container">
-          <p className="flowchart-heading">Servers</p>
+          <p className="flowchart-heading">Visualizations</p>
 
           <div className="flowchart-wrapper">
             <div className="flowchart-chart-wrapper">
